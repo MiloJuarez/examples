@@ -1,0 +1,85 @@
+.container {
+    width: 90vw;
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.page-title h1 {
+    font-size: 1.5rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    padding: 16px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 50px 1fr 24px;
+    --tw-text-opacity: 1;
+    min-width: 300px;
+    max-width: 48px;
+    width: fit-content;
+    min-height: 350px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(107 114 128 / var(--tw-text-opacity));
+    color: white;
+}
+
+.card .card-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-footer .visit {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.card-footer .visit:hover {
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.27), 0 4px 10px rgba(0,0,0,0.19);
+}
+
+form {
+    width: 100%;
+}
+
+button[type=submit] {
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    background-color: rgb(107 114 128 / var(--tw-text-opacity));;
+    border-radius: 8px;
+    color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.form-control {
+    width: 100%;
+    margin: 16px 0;
+}
+
+label {
+    --tw-text-opacity: 1;
+    color: white;
+}
+
+.myDropzone ~ #notification {
+    --tw-text-opacity: 1;
+    margin: 8px 0;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.dropzone {
+    display: flex;
+    justify-content: center;
+    border: 2px dashed #007bff !important;
+}

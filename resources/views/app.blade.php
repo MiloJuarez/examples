@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body class="antialiased">
@@ -31,6 +32,22 @@
             <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
                     Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+        <div class="container">
+            <div class="card-container">
+                <div class="card">
+                    <span class="title">Dropzone</span>
+                    <div class="card-content">
+                        <p class="card-description">Upload file(s) with a dropzone input using the library Dropzone.js</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="visit" href="{{ route('dropzone') }}">View</a>
+                    </div>
                 </div>
             </div>
         </div>

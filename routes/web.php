@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Examples\DropzoneController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::prefix('examples')->group(function () {
+    Route::get('dropzone', [DropzoneController::class, 'index'])->name('dropzone');
+});

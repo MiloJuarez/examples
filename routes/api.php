@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Examples\DropzoneController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,4 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::prefix('examples')->group(function () {
+    Route::post('dropzone-upload', [DropzoneController::class, 'upload'])->name('dropzone.upload');
+    Route::post('dropzone', [DropzoneController::class, 'saveForm'])->name('dropzone.store');
 });
